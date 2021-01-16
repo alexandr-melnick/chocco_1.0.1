@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 5px;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: 27px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  font-size: $defaultFontSize + 4px;
+
+}
+
+.phone__icon {
+  height: 14px;
+  width: 14px;
+  overflow: hidden;
+  margin-right: 6px;
+}

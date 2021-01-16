@@ -1,0 +1,28 @@
+.interctive-avatar {
+  width: 74px;
+  height: 74px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.interctive-avatar--active {
+  border-color: #365A49;
+}
+
+.interctive-avatar__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+
+.interctive-avatar__elem {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

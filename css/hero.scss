@@ -1,0 +1,50 @@
+.hero {
+  background: url("../img/background/pattern.png") right bottom no-repeat;
+  background-color: $blue;
+  height: 100vh;
+  min-height: 652px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 100px;
+
+  &::before {
+    position: absolute;
+    bottom: -55px;
+    right: 1.5%;
+    content: url("../img/decoration/comp.png");
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -55px;
+    left: 3%;
+    content: url("../img/decoration/sheet3.png");
+  }
+
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 0 50px 0;
+  background: url("../img/decoration/bar.png") right center / 50% no-repeat;
+}
+
+.hero__title-section {
+  width: 40%;
+}
+
+.hero__main-title {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero__title-desc {
+  font-size: 21px;
+  margin-bottom: 50px;
+}
