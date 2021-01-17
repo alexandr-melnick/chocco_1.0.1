@@ -3,6 +3,8 @@ $defaultFontSize: 18px;
 
 $blue: #61C4D9;
 
+$z-fixed-menu: 50;
+
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import "normalize.css";
 @import "layout";
@@ -17,3 +19,7 @@ $blue: #61C4D9;
 @import "benefit";
 @import "reviews";
 @import "interctive-avatar";
+@import "order";
+@import "form";
+@import "radio";
+@import "fixed-menu";

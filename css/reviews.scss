@@ -1,12 +1,14 @@
 .reviews-section {
   background: url("../img/decoration/strawberry.png") right top no-repeat;
   position: relative;
+  align-items: center;
 
   &::before {
     content: url("../img/background/pattern_grey2.png");
     position: absolute;
     left: 0;
     bottom: -175px;
+    z-index: 1;
   }
 
   &::after {
@@ -14,6 +16,7 @@
     position: absolute;
     left: 0;
     bottom: -100px;
+    z-index: 2;
   }
 
 
@@ -24,7 +27,8 @@
 }
 
 .reviews__dispaly {
-  background: #F8FAF9;
+  background: url("../img/decoration/branch.png") right top no-repeat;
+  background-color: #F8FAF9;
   padding: 42px 0 42px 42px;
 }
 
@@ -47,7 +51,6 @@
   flex: 1;
   margin-left: 40px;
   padding-right: 190px;
-  background: url("../img/decoration/branch.png") right top no-repeat;
 }
 
 .reviews__title {
