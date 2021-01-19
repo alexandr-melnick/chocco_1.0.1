@@ -22,7 +22,7 @@
   &::before {
     content: url("../img/decoration/circle.png");
     position: absolute;
-    top: 60px;
+    top: 3.75rem;
     right: 0;
     transform: translateX(50%);
   }
@@ -32,12 +32,12 @@
   position: relative;
   align-items: center;
   background: url("../img/background/pattern_grey.png") left center no-repeat;
-  margin-bottom: 58px;
+  margin-bottom: 3.625rem;
 
   &::before {
     content: url("../img/decoration/raspberry.png");
     position: absolute;
-    bottom: -110px;
+    bottom: -6.875rem;
     left: 0;
   }
 }

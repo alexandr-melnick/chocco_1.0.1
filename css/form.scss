@@ -4,7 +4,7 @@
 
 .form__col {
   flex: 1;
-  margin-right: 26px;
+  margin-right: 1.625rem;
 
   &:last-child {
     margin-right: 0;
@@ -13,12 +13,12 @@
 
 .form__row {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 
 .form__block {
   flex: 1;
-  margin-right: 15px;
+  margin-right: .9375rem;
 
   &:last-child {
     margin-right: 0;
@@ -28,12 +28,12 @@
 .form__input {
   font-family: 'Open sans';
   width: 100%;
-  border: 3px solid transparent;
-  border-radius: 4px;
-  height: 58px;
-  padding: 18px 12px 20px;
+  border: .1875rem solid transparent;
+  border-radius: .25rem;
+  height: 3.625rem;
+  padding: 1.125rem 0.75rem 1.25rem;
   outline: none;
-  font-size: 14px;
+  font-size: .875rem;
 
   &:focus {
     border-color: #DEE2BD;
@@ -41,7 +41,7 @@
   }
 
   &--textarea {
-    height: 152px;
+    height: 9.5rem;
     resize: none;
   }
 }
@@ -49,9 +49,9 @@
 .form__control {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 
   &--mb {
-    margin-bottom: 44px;
+    margin-bottom: 2.75rem;
   }
 }

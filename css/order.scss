@@ -7,13 +7,13 @@
     content: url("../img/decoration/blueberry.png");
     position: absolute;
     left: 3%;
-    bottom: 60px;
+    bottom: 3.75rem;
   }
 
   &::before {
     content: url("../img/decoration/sheet4.png");
     position: absolute;
-    bottom: 60px;
+    bottom: 3.75rem;
     right: .5%;
   }
 }

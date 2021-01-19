@@ -7,29 +7,29 @@
     content: url("../img/background/pattern_grey2.png");
     position: absolute;
     left: 0;
-    bottom: -175px;
-    z-index: 1;
+    bottom: -10.9375rem;
+    z-index: -2;
   }
 
   &::after {
     content: url("../img/decoration/berries.png");
     position: absolute;
     left: 0;
-    bottom: -100px;
-    z-index: 2;
+    bottom: -6.25rem;
+    z-index: -1;
   }
 
 
 }
 
 .reviews {
-  margin-bottom: 12px;
+  margin-bottom: .75rem;
 }
 
 .reviews__dispaly {
   background: url("../img/decoration/branch.png") right top no-repeat;
   background-color: #F8FAF9;
-  padding: 42px 0 42px 42px;
+  padding: 2.625rem 0 2.625rem 2.625rem;
 }
 
 .reviews__display-inner {
@@ -37,8 +37,8 @@
 }
 
 .reviews__avatar {
-  width: 253px;
-  height: 264px;
+  width: 15.8125rem;
+  height: 16.5rem;
 }
 
 .reviews__avatar-elem {
@@ -49,20 +49,20 @@
 
 .reviews__content {
   flex: 1;
-  margin-left: 40px;
-  padding-right: 190px;
+  margin-left: 2.5rem;
+  padding-right: 11.875rem;
 }
 
 .reviews__title {
-  font-size: 27px;
+  font-size: 1.6875rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: .75;
   color: #292929;
 }
 
 .reviews__text {
   color: #666;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
 .reviews__autor {

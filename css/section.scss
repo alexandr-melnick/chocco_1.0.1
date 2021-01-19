@@ -1,6 +1,6 @@
 .section {
   height: 100vh;
-  min-height: 652px;
+  min-height: 40.75rem;
   display: flex;
 
   &--font-color--green {
@@ -14,9 +14,9 @@
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   text-align: center;
   text-transform: uppercase;
 }

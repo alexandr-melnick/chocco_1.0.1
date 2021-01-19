@@ -5,7 +5,7 @@
 }
 
 .header__logo {
-  margin-right: 5px;
+  margin-right: .3125rem;
 }
 
 .menu__list {
@@ -14,7 +14,7 @@
 }
 
 .menu__item {
-  margin-right: 27px;
+  margin-right: 1.6875rem;
 
   &:last-child {
     margin-right: 0;
@@ -24,13 +24,13 @@
 .phone {
   display: flex;
   align-items: center;
-  font-size: $defaultFontSize + 4px;
+  font-size: $defaultFontSize + .25rem;
 
 }
 
 .phone__icon {
-  height: 14px;
-  width: 14px;
+  height: .875rem;
+  width: .875rem;
   overflow: hidden;
-  margin-right: 6px;
+  margin-right: .375rem;
 }
