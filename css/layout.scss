@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: $defaultFontSize;
+
+  @include tablets {
+    font-size: $defaultFontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $defaultFontSize - 2px;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -9,7 +21,6 @@ body {
 
 body {
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: $defaultFontSize;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,13 +31,13 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: $containerWidth + 20px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: $containerWidth;
+  width: 95%;
+  max-width: $containerWidth;
   margin: 0 auto;
   position: relative;
 }

@@ -22,7 +22,7 @@
   &::before {
     content: url("../img/decoration/circle.png");
     position: absolute;
-    top: 60px;
+    top: rem(60px);
     right: 0;
     transform: translateX(50%);
   }
@@ -32,12 +32,16 @@
   position: relative;
   align-items: center;
   background: url("../img/background/pattern_grey.png") left center no-repeat;
-  margin-bottom: 58px;
+  margin-bottom: rem(58px);
 
   &::before {
     content: url("../img/decoration/raspberry.png");
     position: absolute;
-    bottom: -110px;
+    bottom: rem(-110px);
     left: 0;
+  }
+
+  @include tablets {
+    background-position: left top;
   }
 }

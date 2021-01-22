@@ -1,9 +1,13 @@
 .features {
   display: flex;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .features__item {
-  margin-right: 38px;
+  margin-right: rem(38px);
 
   &:last-child {
     margin-right: 0;

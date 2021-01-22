@@ -1,9 +1,9 @@
 .btn {
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 800;
-  padding: 21px 41px;
+  padding: rem(21px) rem(41px);
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: rem(100px);
   line-height: 1;
   border: none;
   cursor: pointer;
@@ -33,10 +33,10 @@
   &--theme--transparent {
     background: transparent;
     color: #000;
-    font-size: 18px;
+    font-size: rem(18px);
     text-transform: none;
     font-weight: normal;
-    padding-left: 22px;
+    padding-left: rem(22px);
 
     &:hover {
       color: #497870;

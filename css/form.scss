@@ -1,24 +1,40 @@
 .form {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form__col {
   flex: 1;
-  margin-right: 26px;
+  margin-right: rem(26px);
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include tablets {
+    margin-right: 0;
+    width: rem(466px);
+    text-align: center;
   }
 }
 
 .form__row {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: rem(18px);
+
+  @include tablets {
+    margin-bottom: rem(14px);
+  }
+
 }
 
 .form__block {
   flex: 1;
-  margin-right: 15px;
+  margin-right: rem(15px);
 
   &:last-child {
     margin-right: 0;
@@ -28,30 +44,39 @@
 .form__input {
   font-family: 'Open sans';
   width: 100%;
-  border: 3px solid transparent;
-  border-radius: 4px;
-  height: 58px;
-  padding: 18px 12px 20px;
+  border: rem(3px) solid transparent;
+  border-radius: rem(4px);
+  height: rem(58px);
+  padding: rem(18px) rem(12px) rem(20px);
   outline: none;
-  font-size: 14px;
+  font-size: rem(14px);
 
   &:focus {
     border-color: #DEE2BD;
     outline: none;
   }
 
-  &--textarea {
-    height: 152px;
-    resize: none;
+  @include tablets {
+    height: rem(36px);
   }
+
+  &--textarea {
+    height: rem(152px);
+    resize: none;
+
+    @include tablets {
+      height: rem(82px);
+    }
+  }
+
 }
 
 .form__control {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  margin-bottom: rem(16px);
 
   &--mb {
-    margin-bottom: 44px;
+    margin-bottom: rem(44px);
   }
 }

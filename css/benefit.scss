@@ -5,8 +5,8 @@
 
 .benefit__img-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: rem(126px);
+  height: rem(126px);
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
@@ -14,8 +14,8 @@
 }
 
 .benefit__icon {
-  width: 64px;
-  height: 68px;
+  width: rem(64px);
+  height: rem(68px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -23,9 +23,9 @@
 }
 
 .benefit__title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: 700;
-  margin-bottom: 18px;
+  margin-bottom: rem(18px);
 }
 
 .benefit__desc {

@@ -2,25 +2,36 @@
   background: url("../img/background/pattern.png") right bottom no-repeat;
   background-color: $blue;
   height: 100vh;
-  min-height: 652px;
+  min-height: rem(652px);
   color: #fff;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: rem(100px);
 
   &::before {
     position: absolute;
-    bottom: -55px;
+    bottom: rem(-55px);
     right: 1.5%;
     content: url("../img/decoration/comp.png");
   }
 
   &::after {
     position: absolute;
-    bottom: -55px;
+    bottom: rem(-55px);
     left: 3%;
     content: url("../img/decoration/sheet3.png");
   }
 
+  @include tablets {
+    background-position: right bottom 77%;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .hero__container {
@@ -28,23 +39,42 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 50px 0;
+  padding: rem(24px) 0 rem(50px) 0;
   background: url("../img/decoration/bar.png") right center / 50% no-repeat;
+
+  @include tablets {
+    background: none;
+  }
 }
 
 .hero__title-section {
   width: 40%;
+
+  @include tablets {
+    width: 100%;
+    text-align: center;
+
+    &::before {
+      content: url("../img/decoration/comp1.png");
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .hero__main-title {
-  font-size: 48px;
+  font-size: rem(48px);
   line-height: 1.2;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
+  margin-top: rem(17px);
 }
 
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 50px;
+  font-size: rem(21px);
+  margin-bottom: rem(37px);
+
+  @include tablets {
+    padding: 0 27%;
+  }
 }

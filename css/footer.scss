@@ -1,0 +1,31 @@
+.footer-section {
+  background: url("../img/background/map.png") center center / cover no-repeat;
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  height: rem(90px);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.footer__contacts {
+  font-size: rem(21px);
+}
+
+.footer__phone {
+  color: #497870;
+}
+
+.phone__icon--theme--green {
+  fill: #497870;
+}
