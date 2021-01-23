@@ -18,6 +18,10 @@
     }
 
   }
+
+  @include phones {
+    margin-bottom: rem(10px);
+  }
 }
 
 .radio__elem {

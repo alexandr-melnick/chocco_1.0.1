@@ -26,11 +26,27 @@
   font-size: rem(27px);
   font-weight: 700;
   margin-bottom: rem(18px);
+
+  @include phones {
+    margin-bottom: rem(12px);
+  }
 }
 
 .benefit__desc {
   p {
     color: #666;
     font-weight: 300;
+
+    @include phones {
+      font-weight: 400;
+      padding-right: rem(48px)
+    }
+  }
+}
+
+.benefit__text {
+  @include phones {
+    text-align: start;
+    margin-left: rem(12px);
   }
 }

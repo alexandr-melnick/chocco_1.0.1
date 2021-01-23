@@ -9,6 +9,10 @@
   background: #fff;
   width: 100%;
   height: rem(90px);
+
+  @include phones {
+    height: rem(157px);
+  }
 }
 
 .footer__container {
@@ -16,14 +20,37 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
+
+  @include phones {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .footer__contacts {
   font-size: rem(21px);
+
+  @include phones {
+    margin-bottom: rem(19px);
+  }
+}
+
+.footer__adress {
+  @include phones {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(9px);
+  }
 }
 
 .footer__phone {
+
   color: #497870;
+
+  @include phones {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .phone__icon--theme--green {

@@ -52,13 +52,23 @@
 
   @include tablets {
     width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 
     &::before {
-      content: url("../img/decoration/comp1.png");
+      content: "";
+      height: rem(344px);
+      width: rem(350px);
+      background: url("../img/decoration/comp1.png") center center / contain no-repeat;
       margin-bottom: 20px;
     }
   }
+
+
 }
 
 .hero__main-title {
@@ -68,6 +78,10 @@
   text-transform: uppercase;
   margin-bottom: rem(10px);
   margin-top: rem(17px);
+
+  @include phones {
+    line-height: 0.8;
+  }
 }
 
 .hero__title-desc {
@@ -77,4 +91,10 @@
   @include tablets {
     padding: 0 27%;
   }
+
+  @include phones {
+    padding: 0 14%;
+  }
+
+
 }

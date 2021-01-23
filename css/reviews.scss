@@ -29,10 +29,29 @@
 .reviews__dispaly {
   background: url("../img/decoration/branch.png") right top no-repeat;
   background-color: #F8FAF9;
-  padding: rem(42px) 0 rem(42px) rem(42px);
+  padding: rem(50px) 0 rem(42px) rem(42px);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: rem(-60px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(83px);
+    height: rem(83px);
+    border-radius: 50%;
+    background-color: #fff;
+
+    @include phones {
+      display: none;
+    }
+  }
 
   @include tablets {
-    padding: rem(24px);
+    padding: rem(26px);
   }
 }
 

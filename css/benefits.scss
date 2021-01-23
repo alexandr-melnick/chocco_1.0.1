@@ -1,5 +1,11 @@
 .benefits {
   display: flex;
+
+  @include phones {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .benefits__item {
@@ -25,7 +31,18 @@
     top: rem(60px);
     right: 0;
     transform: translateX(50%);
+
+    @include phones {
+      display: none;
+    }
   }
+
+  @include phones {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(40px);
+  }
+
 }
 
 .benefits-section {
@@ -39,9 +56,17 @@
     position: absolute;
     bottom: rem(-110px);
     left: 0;
+
+    @include phones {
+      display: none;
+    }
   }
 
   @include tablets {
     background-position: left top;
+  }
+
+  @include phones {
+    background: none;
   }
 }

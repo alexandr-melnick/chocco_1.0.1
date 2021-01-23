@@ -4,12 +4,19 @@
   @include tablets {
     flex-direction: column;
     align-items: center;
+    padding: 0 19%;
   }
+
+  @include phones {
+    padding: 0;
+  }
+
 }
 
 .form__col {
   flex: 1;
   margin-right: rem(26px);
+  width: 100%;
 
   &:last-child {
     margin-right: 0;
@@ -17,7 +24,6 @@
 
   @include tablets {
     margin-right: 0;
-    width: rem(466px);
     text-align: center;
   }
 }
@@ -66,6 +72,7 @@
 
     @include tablets {
       height: rem(82px);
+      width: 100%;
     }
   }
 
@@ -79,4 +86,13 @@
   &--mb {
     margin-bottom: rem(44px);
   }
+
+  @include phones {
+    justify-content: center;
+  }
+}
+
+
+.form__title {
+  text-align: start;
 }
