@@ -35,7 +35,6 @@
   @include tablets {
     margin-bottom: rem(14px);
   }
-
 }
 
 .form__block {
@@ -85,10 +84,10 @@
 
   &--mb {
     margin-bottom: rem(44px);
-  }
 
-  @include phones {
-    justify-content: center;
+    @include phones {
+      justify-content: center;
+    }
   }
 }
 

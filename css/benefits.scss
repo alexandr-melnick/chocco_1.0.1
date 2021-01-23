@@ -49,12 +49,16 @@
   position: relative;
   align-items: center;
   background: url("../img/background/pattern_grey.png") left center no-repeat;
+
   margin-bottom: rem(58px);
+
 
   &::before {
     content: url("../img/decoration/raspberry.png");
     position: absolute;
+
     bottom: rem(-110px);
+
     left: 0;
 
     @include phones {
