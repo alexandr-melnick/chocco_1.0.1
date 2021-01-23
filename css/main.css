@@ -798,3 +798,43 @@ img {
 .socials__item {
   margin-right: 0.7777777778rem;
 }
+
+.header__logo-elem {
+  width: 2.8888888889rem;
+  height: 2.1111111111rem;
+  fill: #fff;
+}
+
+.phone__icon {
+  width: 0.7777777778rem;
+  height: 0.7777777778rem;
+  fill: #fff;
+}
+
+.phone__icon--theme--green {
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  fill: #497870;
+}
+
+.feature__icon {
+  width: 2.2777777778rem;
+  height: 2.2777777778rem;
+  fill: #C6F7FF;
+}
+
+.benefit__icon {
+  width: 3.7777777778rem;
+  height: 3.7777777778rem;
+  fill: #292929;
+}
+
+.socials__icon {
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
+  fill: #ccc;
+  transition: 0.3s;
+}
+.socials__icon:hover {
+  fill: #000;
+}

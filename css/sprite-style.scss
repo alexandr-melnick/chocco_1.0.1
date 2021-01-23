@@ -1,0 +1,42 @@
+.header__logo-elem {
+  width: rem(52px);
+  height: rem(38px);
+  fill: #fff;
+}
+
+.phone__icon {
+  width: rem(14px);
+  height: rem(14px);
+  fill: #fff;
+}
+
+.phone__icon--theme--green {
+  width: rem(12px);
+  height: rem(12px);
+  fill: #497870;
+}
+
+.feature__icon {
+  width: rem(41px);
+  height: rem(41px);
+  fill: #C6F7FF;
+}
+
+.benefit__icon {
+  width: rem(68px);
+  height: rem(68px);
+  fill: #292929;
+}
+
+.socials__icon {
+  width: rem(20px);
+  height: rem(20px);
+  fill: #ccc;
+  transition: .3s;
+
+
+  &:hover {
+    fill: #000;
+  }
+
+}
