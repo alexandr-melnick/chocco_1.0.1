@@ -6,11 +6,11 @@ html {
   font-size: $defaultFontSize;
 
   @include tablets {
-    font-size: $defaultFontSize - 1px;
+    font-size: $defaultFontSize - 2px;
   }
 
   @include phones {
-    font-size: $defaultFontSize - 2px;
+    font-size: $defaultFontSize - 3px;
   }
 }
 

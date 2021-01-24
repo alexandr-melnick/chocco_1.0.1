@@ -48,7 +48,7 @@
 .benefits-section {
   position: relative;
   background: url("../img/background/pattern_grey.png") left center no-repeat;
-
+  align-items: center;
   margin-bottom: rem(58px);
 
 
@@ -70,6 +70,7 @@
   }
 
   @include phones {
+    align-items: normal;
     background: none;
   }
 }
