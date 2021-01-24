@@ -19,4 +19,10 @@
   margin-bottom: rem(50px);
   text-align: center;
   text-transform: uppercase;
+
+  @include tablets {
+    margin-bottom: rem(30px);
+    padding: 0 15%;
+  }
+
 }

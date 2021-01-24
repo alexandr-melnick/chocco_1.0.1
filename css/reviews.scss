@@ -4,19 +4,34 @@
   align-items: center;
 
   &::before {
-    content: url("../img/background/pattern_grey2.png");
+    content: "";
+    background: url("../img/background/pattern_grey2.png") center center / contain no-repeat;
     position: absolute;
     left: 0;
     bottom: rem(-175px);
     z-index: 1;
+    width: rem(102px);
+    height: rem(321px);
+
+    @include phones {
+      width: rem(75px);
+    }
+
   }
 
   &::after {
-    content: url("../img/decoration/berries.png");
+    content: "";
+    background: url("../img/decoration/berries.png") center center / contain no-repeat;
+    width: rem(135px);
+    height: rem(193px);
     position: absolute;
     left: 0;
     bottom: rem(-100px);
     z-index: 2;
+
+    @include phones {
+      width: rem(95px);
+    }
   }
 
 

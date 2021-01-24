@@ -94,7 +94,6 @@ img {
   min-height: 36.2222222222rem;
   color: #fff;
   position: relative;
-  margin-bottom: 5.5555555556rem;
 }
 .hero::before {
   position: absolute;
@@ -111,6 +110,7 @@ img {
 @media screen and (max-width: 768px) {
   .hero {
     background-position: right bottom 77%;
+    background-size: contain;
   }
   .hero::after {
     display: none;
@@ -149,7 +149,7 @@ img {
   }
   .hero__title-section::before {
     content: "";
-    height: 19.1111111111rem;
+    height: 16.6666666667rem;
     width: 19.4444444444rem;
     background: url("../img/decoration/comp1.png") center center/contain no-repeat;
     margin-bottom: 20px;
@@ -333,6 +333,12 @@ img {
   text-align: center;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .section__title {
+    margin-bottom: 1.6666666667rem;
+    padding: 0 15%;
+  }
+}
 
 .headline {
   text-align: center;
@@ -406,7 +412,6 @@ img {
 
 .benefits-section {
   position: relative;
-  align-items: center;
   background: url("../img/background/pattern_grey.png") left center no-repeat;
   margin-bottom: 3.2222222222rem;
 }
@@ -490,18 +495,34 @@ img {
   align-items: center;
 }
 .reviews-section::before {
-  content: url("../img/background/pattern_grey2.png");
+  content: "";
+  background: url("../img/background/pattern_grey2.png") center center/contain no-repeat;
   position: absolute;
   left: 0;
   bottom: -9.7222222222rem;
   z-index: 1;
+  width: 5.6666666667rem;
+  height: 17.8333333333rem;
+}
+@media screen and (max-width: 480px) {
+  .reviews-section::before {
+    width: 4.1666666667rem;
+  }
 }
 .reviews-section::after {
-  content: url("../img/decoration/berries.png");
+  content: "";
+  background: url("../img/decoration/berries.png") center center/contain no-repeat;
+  width: 7.5rem;
+  height: 10.7222222222rem;
   position: absolute;
   left: 0;
   bottom: -5.5555555556rem;
   z-index: 2;
+}
+@media screen and (max-width: 480px) {
+  .reviews-section::after {
+    width: 5.2777777778rem;
+  }
 }
 
 .reviews {
@@ -638,7 +659,6 @@ img {
 .order-section {
   background: url("../img/background/bg_input.png") center center no-repeat;
   position: relative;
-  align-items: center;
 }
 .order-section::after {
   content: url("../img/decoration/blueberry.png");
@@ -749,7 +769,7 @@ img {
   margin-bottom: 2.4444444444rem;
 }
 @media screen and (max-width: 480px) {
-  .form__control {
+  .form__control--mb {
     justify-content: center;
   }
 }
@@ -764,6 +784,7 @@ img {
   -webkit-user-select: none;
           user-select: none;
   margin-right: 1.3333333333rem;
+  margin-bottom: 0.2777777778rem;
 }
 .radio:last-child {
   margin-right: 0;
