@@ -23,6 +23,10 @@
     &::before {
       display: none;
     }
+
+    @include phones {
+      margin-bottom: 0;
+    }
   }
 
   &::before {
@@ -70,7 +74,6 @@
   }
 
   @include phones {
-    align-items: normal;
     background: none;
   }
 }

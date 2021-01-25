@@ -336,7 +336,12 @@ img {
 @media screen and (max-width: 768px) {
   .section__title {
     margin-bottom: 1.6666666667rem;
-    padding: 0 15%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 2.4rem;
   }
 }
 
@@ -390,6 +395,11 @@ img {
 .benefits__item:last-child::before {
   display: none;
 }
+@media screen and (max-width: 480px) {
+  .benefits__item:last-child {
+    margin-bottom: 0;
+  }
+}
 .benefits__item::before {
   content: url("../img/decoration/circle.png");
   position: absolute;
@@ -434,7 +444,6 @@ img {
 }
 @media screen and (max-width: 480px) {
   .benefits-section {
-    align-items: normal;
     background: none;
   }
 }
@@ -683,11 +692,6 @@ img {
     display: none;
   }
 }
-@media screen and (max-width: 480px) {
-  .order-section {
-    align-items: normal;
-  }
-}
 
 .form {
   display: flex;
@@ -773,12 +777,18 @@ img {
   flex-wrap: wrap;
   margin-bottom: 0.8888888889rem;
 }
+@media screen and (max-width: 768px) {
+  .form__control {
+    justify-content: center;
+  }
+}
 .form__control--mb {
   margin-bottom: 2.4444444444rem;
 }
 @media screen and (max-width: 480px) {
   .form__control--mb {
     justify-content: center;
+    margin-bottom: 1rem;
   }
 }
 

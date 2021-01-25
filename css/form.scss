@@ -82,11 +82,16 @@
   flex-wrap: wrap;
   margin-bottom: rem(16px);
 
+  @include tablets {
+    justify-content: center
+  }
+
   &--mb {
     margin-bottom: rem(44px);
 
     @include phones {
       justify-content: center;
+      margin-bottom: 1rem;
     }
   }
 }
