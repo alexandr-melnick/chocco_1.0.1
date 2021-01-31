@@ -1,0 +1,24 @@
+.slider {
+  display: block;
+  width: rem(25px);
+  height: rem(41px);
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.slider__elem {
+  width: rem(24px);
+  height: rem(40px);
+  fill: transparent;
+}
+
+.slider--tablets {
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+
+}

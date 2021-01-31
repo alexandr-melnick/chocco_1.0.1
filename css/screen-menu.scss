@@ -1,0 +1,37 @@
+.screen-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #313131;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(36px);
+  display: none;
+}
+
+.screen-menu__close-elem {
+  width: rem(20px);
+  height: rem(20px);
+  fill: #fff;
+  position: absolute;
+  right: rem(42px);
+  top: rem(42px);
+  transition: 0.3s;
+
+  &:hover {
+    fill: #ccc;
+  }
+}
+
+.screen-menu__item {
+  text-align: center;
+  transition: 0.3s;
+
+  &:hover {
+    color: #ccc;
+  }
+}
