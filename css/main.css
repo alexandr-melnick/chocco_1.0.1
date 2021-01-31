@@ -580,7 +580,7 @@ img {
   .product__desc-text {
     text-align: center;
     line-height: 1;
-    padding: 0 10rem;
+    padding: 0 7rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -688,14 +688,15 @@ img {
   flex: 1;
 }
 
+.compound__col {
+  align-items: center;
+  display: flex;
+}
+
 .compound__icon {
   width: 1.7777777778rem;
   height: 1.7777777778rem;
-}
-
-.compound__desc {
-  position: absolute;
-  left: 4.4444444444rem;
+  margin-right: 0.7rem;
 }
 
 .slider {

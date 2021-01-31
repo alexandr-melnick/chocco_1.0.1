@@ -59,12 +59,13 @@
   flex: 1;
 }
 
+.compound__col {
+  align-items: center;
+  display: flex;
+}
+
 .compound__icon {
   width: rem(32px);
   height: rem(32px);
-}
-
-.compound__desc {
-  position: absolute;
-  left: rem(80px);
+  margin-right: 0.7rem;
 }
