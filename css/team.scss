@@ -1,0 +1,129 @@
+.team-container {
+  height: rem(445px);
+}
+
+.team__list {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.team__item {
+  margin-right: rem(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+
+  @include tablets {
+    margin: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  // &:nth-child(odd) {
+  //   margin-top: rem(40px);
+  // }
+
+
+  // &:nth-child(even) {
+  //   margin-bottom: rem(40px);
+  // }
+}
+
+.team__name {
+  font-size: rem(21px);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(8px);
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    margin-left: rem(4px);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #365A49;
+  }
+}
+
+
+
+.team__ava {
+  object-fit: contain;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.team__ava--tablets {
+  display: none;
+
+  @include tablets {
+    display: block;
+    max-width: rem(220px);
+  }
+}
+
+.team__acc {
+  height: 0;
+  transition: 0.7s;
+  overflow: hidden;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 35%;
+  }
+}
+
+
+.team__acc-title {
+  margin-bottom: rem(4px);
+}
+
+.team__acc-desk {
+  font-weight: 300;
+  color: #666;
+}
+
+.team-section {
+  position: relative;
+  align-items: center;
+
+  &::after {
+    content: "";
+    background: url("../img/decoration/raspberries.png") center center /cover no-repeat;
+    position: absolute;
+    width: rem(104px);
+    height: rem(114px);
+    left: 2%;
+    bottom: -5%;
+    z-index: -1;
+  }
+
+  &::before {
+    content: "";
+    background: url("../img/decoration/blueberrys.png") center right / 70% no-repeat, url("../img/background/pattern_team.png") center center / cover no-repeat;
+    width: rem(193px);
+    height: rem(453px);
+    position: absolute;
+    right: 0;
+    top: -30%;
+    z-index: -2;
+  }
+}
+
+.team__item--active .team__name::after {
+  transform: rotate(180deg);
+}
