@@ -1,6 +1,7 @@
 const team = document.querySelector(".team__list");
 
 team.addEventListener('click', e => {
+  e.preventDefault();
   const target =e.target;
   
   if (target.classList.contains('team__name')) {
