@@ -890,6 +890,7 @@ img {
   padding: 2.7777777778rem 0 2.3333333333rem 2.3333333333rem;
   position: relative;
   overflow: hidden;
+  min-height: 19.4444444444rem;
 }
 .reviews__dispaly::before {
   content: "";
@@ -916,12 +917,21 @@ img {
 
 .reviews__display-inner {
   display: flex;
+  position: absolute;
+  pointer-events: unset;
+  opacity: 0;
 }
 @media screen and (max-width: 768px) {
   .reviews__display-inner {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.review__active {
+  opacity: 1;
+  position: static;
+  pointer-events: unset;
 }
 
 .reviews__avatar {
@@ -986,9 +996,13 @@ img {
   width: 4.1111111111rem;
   height: 4.1111111111rem;
   border: 0.2222222222rem solid transparent;
+  transition: all 0.1s;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+}
+.interctive-avatar:hover {
+  border-color: #365A49;
 }
 
 .interctive-avatar--active {
@@ -997,10 +1011,6 @@ img {
 
 .interctive-avatar__link {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  right: 0;
   display: block;
 }
 

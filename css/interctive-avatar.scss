@@ -2,10 +2,14 @@
   width: rem(74px);
   height: rem(74px);
   border: rem(4px) solid transparent;
-
+  transition: all .1s;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+
+  &:hover {
+    border-color: #365A49;
+  }
 }
 
 .interctive-avatar--active {
@@ -14,10 +18,6 @@
 
 .interctive-avatar__link {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  right: 0;
   display: block;
 }
 

@@ -304,12 +304,12 @@
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
-            <div class="reviews__dispaly">
-              <div class="reviews__display-inner">
+            <ul class="reviews__dispaly">
+              <li class="reviews__display-inner review__active" data-show="one">
                 <div class="reviews__avatar">
                   <img src="./img/Girl1.png" alt="happy girl" class="reviews__avatar-elem">
                 </div>
-                <article class="reviews__content">
+                <article class="reviews__content ">
                   <h3 class="reviews__title">Лучший перекус</h3>
                   <div class="reviews__text">
                     <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за
@@ -319,22 +319,51 @@
                   </div>
                   <div class="reviews__autor">Алёна Хмельницкая</div>
                 </article>
-              </div>
-            </div>
+              </li>
+              <li class="reviews__display-inner" data-show="two">
+                <div class="reviews__avatar">
+                  <img src="./img/boy1.png" alt="boy" class="reviews__avatar-elem">
+                </div>
+                <article class="reviews__content">
+                  <h3 class="reviews__title">Идеально подходят для спортсменов</h3>
+                  <div class="reviews__text">
+                    <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно
+                      доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо
+                      производителю за этот качественный и экологичный продукт.</p>
+                  </div>
+                  <div class="reviews__autor">Вадим Грачев</div>
+                </article>
+              </li>
+              <li class="reviews__display-inner" data-show="three">
+                <div class="reviews__avatar">
+                  <img src="./img/Girl2.png" alt="happy girl" class="reviews__avatar-elem">
+                </div>
+                <article class="reviews__content">
+                  <h3 class="reviews__title">Лучшие батончики премиум уровня</h3>
+                  <div class="reviews__text">
+                    <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако,
+                      как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же,
+                      кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс,
+                      чем минус.</p>
+                  </div>
+                  <div class="reviews__autor">Мария Орлова</div>
+                </article>
+              </li>
+            </ul>
           </div>
           <ul class="reviews__switcher">
             <li class="reviews__switcher-item interctive-avatar interctive-avatar--active">
-              <a href="#" class="interctive-avatar__link">
+              <a href="#" class="interctive-avatar__link" data-click="one">
                 <img src="./img/Girl1.png" alt="girl" class="interctive-avatar__elem">
               </a>
             </li>
             <li class="reviews__switcher-item interctive-avatar">
-              <a href="#" class="interctive-avatar__link">
+              <a href="#" class="interctive-avatar__link" data-click="two">
                 <img src="./img/boy1.png" alt="boy" class="interctive-avatar__elem">
               </a>
             </li>
             <li class="reviews__switcher-item interctive-avatar">
-              <a href="#" class="interctive-avatar__link">
+              <a href="#" class="interctive-avatar__link" data-click="three">
                 <img src="./img/girl2.png" alt="girl" class="interctive-avatar__elem">
               </a>
             </li>
@@ -513,6 +542,7 @@
   <script src="./scripts/close_menu.js"></script>
   <script src="./scripts/compound.js"></script>
   <script src="./scripts/accordion.js"></script>
+  <script src="./scripts/slide_show.js"></script>
 </body>
 
 </html>
