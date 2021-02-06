@@ -3,9 +3,6 @@
   width: rem(25px);
   height: rem(41px);
 
-  @include tablets {
-    display: none;
-  }
 }
 
 .slider__elem {
@@ -14,11 +11,35 @@
   fill: transparent;
 }
 
-.slider--tablets {
-  display: none;
+
+.arrow-prev {
+  position: absolute;
+  top: 40%;
+  left: -3%;
 
   @include tablets {
-    display: block;
+    left: 25%;
+    top: 20%;
   }
 
+  @include phones {
+    left: 1%;
+    top: 20%;
+  }
+}
+
+.arrow-next {
+  position: absolute;
+  right: 0;
+  top: 40%;
+
+  @include tablets {
+    right: 22%;
+    top: 20%;
+  }
+
+  @include phones {
+    right: 1%;
+    top: 20%;
+  }
 }
