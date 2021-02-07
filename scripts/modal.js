@@ -40,6 +40,9 @@ $('.form').submit(e => {
 
   request.done((data) => {
     content.text(data.message)
+    form.each(() =>{
+      $(".form__input").val("")
+    });
   })
 
   request.fail((data) => {
