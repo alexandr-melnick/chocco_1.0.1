@@ -11,8 +11,7 @@ team.addEventListener('click', e => {
             let activeAcc = active.querySelector(".team__acc");
       activeAcc.style.height = "0px";
       active.classList.remove("team__item--active");
-    }
-
+    } 
     if (!active || active.querySelector(".team__name") !== target) {
       let elem = target.closest(".team__item");
       elem.classList.add("team__item--active");

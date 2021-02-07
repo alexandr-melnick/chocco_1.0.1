@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CHOCCO</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -541,7 +542,7 @@
               </li>
               <li class="reviews__display-inner" data-show="three">
                 <div class="reviews__avatar">
-                  <img src="./img/Girl2.png" alt="happy girl" class="reviews__avatar-elem">
+                  <img src="./img/girl2.png" alt="happy girl" class="reviews__avatar-elem">
                 </div>
                 <article class="reviews__content">
                   <h3 class="reviews__title">Лучшие батончики премиум уровня</h3>
@@ -579,15 +580,16 @@
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
           <form class="form">
+            <input type="hidden" name="to" value="example@mail.ru">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="name">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="phone">
                 </label>
               </div>
               <div class="form__row">
@@ -619,7 +621,7 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Комментарий</div>
-                  <textarea class="form__input form__input--textarea"></textarea>
+                  <textarea class="form__input form__input--textarea" name="comment"></textarea>
                 </label>
               </div>
               <div class="form__control">
@@ -647,6 +649,16 @@
 
             </div>
           </form>
+        </div>
+        <div class="modal" id="modal">
+          <div class="modal__container">
+            <div class="modal__content">
+              Сообщение отправлено
+            </div>
+            <div class="modal__button-container">
+              <a href="#" class="btn js-submit-btn  btn--theme--green">закрыть</a>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section footer-section">
@@ -741,16 +753,19 @@
       <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="./scripts/close_menu.js"></script>
   <script src="./scripts/compound.js"></script>
   <script src="./scripts/accordion.js"></script>
   <script src="./scripts/slide_show.js"></script>
   <script src="./scripts/slider.js"></script>
+  <script src="./scripts/modal.js"></script>
 </body>
 
 </html>

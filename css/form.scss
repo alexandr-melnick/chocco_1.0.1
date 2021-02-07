@@ -100,3 +100,11 @@
 .form__title {
   text-align: start;
 }
+
+input.btn {
+  outline: none !important;
+}
+
+.input-error {
+  border: 1px solid red;
+}

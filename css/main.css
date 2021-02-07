@@ -1189,6 +1189,14 @@ img {
   text-align: start;
 }
 
+input.btn {
+  outline: none !important;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
 .radio {
   display: flex;
   cursor: pointer;
@@ -1452,4 +1460,44 @@ img {
 }
 .screen-menu__item:hover {
   color: #ccc;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modal.error-modal .modal__content {
+  color: red;
+}
+.modal.fancybox-content {
+  padding: 0 i !important;
+}
+.modal.fancybox-button {
+  display: none im !important;
+}
+
+.modal__container {
+  min-width: 17.2222222222rem;
+  padding: 0 1.1111111111rem;
+  height: 9.7777777778rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__content {
+  text-align: center;
+  color: #000;
+  font-weight: 500;
 }
