@@ -376,7 +376,7 @@ img {
   height: 6.3333333333rem;
   left: 2%;
   bottom: -5%;
-  z-index: -1;
+  z-index: 10;
 }
 .team-section::before {
   content: "";
@@ -1500,4 +1500,126 @@ input.btn {
   text-align: center;
   color: #000;
   font-weight: 500;
+}
+
+.assortment {
+  background: url("../img/background/bg__assortment.png") center center/cover no-repeat;
+  position: relative;
+}
+.assortment::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.2;
+}
+
+.assortment__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.assortment__title {
+  margin-top: 5.6666666667rem;
+  margin-left: 5%;
+  color: #FFF;
+}
+@media screen and (max-width: 480px) {
+  .assortment__title {
+    margin-left: 1%;
+  }
+}
+
+.assortment__list {
+  display: flex;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.assortment__item {
+  display: flex;
+}
+.assortment__item-title {
+  margin: 0;
+  width: 420%;
+  color: white;
+  font-size: 48px;
+  transform: rotate(-90deg) translate(50%, -237%);
+}
+@media screen and (max-width: 768px) {
+  .assortment__item-title {
+    width: 460%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .assortment__item-title {
+    width: 553%;
+    transform: rotate(-90deg) translate(50%, -250%);
+  }
+}
+
+.assortment__item-rotate {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  width: 5.6666666667rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .assortment__item-rotate {
+    width: 5rem;
+  }
+}
+.assortment__item-rotate--bg--1 {
+  background: url(../img/background/assort_title1.png) center center/cover no-repeat;
+  position: relative;
+}
+.assortment__item-rotate--bg--1::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+.assortment__item-rotate--bg--2 {
+  background: url(../img/background/assort_title2.png) center center/cover no-repeat;
+  position: relative;
+}
+.assortment__item-rotate--bg--2::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+.assortment__item-rotate--bg--3 {
+  background: url(../img/background/assort_title3.png) center center/cover no-repeat;
+  position: relative;
+}
+.assortment__item-rotate--bg--3::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.assortment__item-desc {
+  background: black;
+  opacity: 0.9;
+  width: 0;
+  transition: 0.3s;
+}
+.assortment__item-desc p {
+  padding: 2.1111111111rem 2.7777777778rem;
+  color: white;
 }
