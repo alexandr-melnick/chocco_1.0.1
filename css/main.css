@@ -1617,7 +1617,7 @@ input.btn {
   background: black;
   opacity: 0.9;
   width: 0;
-  transition: 0.3s;
+  transition: width 0.7s;
 }
 .assortment__item-desc p {
   padding: 2.1111111111rem 2.7777777778rem;

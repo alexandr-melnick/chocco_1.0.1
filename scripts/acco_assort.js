@@ -4,14 +4,14 @@ const open = item => {
   container.addClass("assortment__item--active")
   const openWidth = calcWidth();
   const content = item.next('.assortment__item-desc');
-  content.width = `${openWidth}px`;
+  content.width(`${openWidth}px`);
 }
 
 const close = container => {
   const items = container.find(".assortment__item");
   items.removeClass("assortment__item--active")
   const content = container.find('.assortment__item-desc');
-  content.width = 0;
+  content.width(0);
 }
 
 $(".assortment__item-rotate").on('click', e => {
@@ -23,6 +23,7 @@ $(".assortment__item-rotate").on('click', e => {
   if (elemContainer.hasClass("assortment__item--active")) {
     close(container);
   } else {
+    close(container);
     open($this);
   }
   
