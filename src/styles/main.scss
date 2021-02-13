@@ -1,0 +1,41 @@
+$containerWidth: 940px;
+$defaultFontSize: 18px;
+
+$tablet: 768px;
+$phone: 480px;
+
+$blue: #61C4D9;
+
+$z-fixed-menu: 50;
+$z-screen-menu: 100;
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
+// @import "./scss/*.scss";
+@import "./scss/media.scss";
+@import "./scss/layout.scss";
+@import "./scss/hero.scss";
+@import "./scss/header.scss";
+@import "./scss/features.scss";
+@import "./scss/feature.scss";
+@import "./scss/team.scss";
+@import "./scss/btn.scss";
+@import "./scss/section.scss";
+@import "./scss/headline.scss";
+@import "./scss/benefit.scss";
+@import "./scss/benefits.scss";
+@import "./scss/product.scss";
+@import "./scss/compound.scss";
+@import "./scss/slider.scss";
+@import "./scss/reviews.scss";
+@import "./scss/interctive-avatar.scss";
+@import "./scss/order.scss";
+@import "./scss/form.scss";
+@import "./scss/radio.scss";
+@import "./scss/fixed-menu.scss";
+@import "./scss/hamburger.scss";
+@import "./scss/footer.scss";
+@import "./scss/socials.scss";
+@import "./scss/sprite-style.scss";
+@import "./scss/screen-menu.scss";
+@import "./scss/modal.scss";
+@import "./scss/assortment.scss";
