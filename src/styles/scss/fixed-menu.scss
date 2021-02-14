@@ -4,8 +4,24 @@
   right: 4%;
   z-index: $z-fixed-menu;
 
+
   @include tablets {
     display: none;
+  }
+
+  &--darkgreen {
+    .fixed-menu__item--active {
+      .fixed-menu__link {
+        border-color: #365A49;
+        ;
+      }
+
+    }
+
+    .fixed-menu__link::before {
+      background: #365A49;
+      ;
+    }
   }
 }
 
@@ -16,6 +32,7 @@
   &--active {
     .fixed-menu__link {
       border-color: #fff;
+      transition: .5s;
     }
   }
 }
@@ -37,6 +54,7 @@
 
     border-radius: 50%;
     background: #fff;
+    transition: .5s;
     position: absolute;
     left: 50%;
     top: 50%;

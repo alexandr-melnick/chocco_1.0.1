@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/alexandr-melnick/chocco#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.14",    
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean": "^0.4.0",
@@ -32,9 +32,10 @@
     "node-sass": "^5.0.0"
   },
   "dependencies": {
-    "jquery": "^3.5.1",
     "bxslider-import": "^4.2.14",
     "fancybox": "^3.0.1",
+    "jquery": "^3.5.1",
+    "jquery-touchswipe": "^1.6.19",
     "normalize.css": "^8.0.1"
   }
 }
