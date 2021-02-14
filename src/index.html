@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CHOCCO</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ef407572-dd14-423e-abec-04e7c629139f&lang=ru_RU"
+    type="text/javascript">
+    </script>
   <link rel="stylesheet" href="main.min.css">
 </head>
 
@@ -629,6 +630,25 @@
           </ul>
         </div>
       </section>
+      <section class="section video-section" data-section-id="video">
+        <div class="container video">
+          <h2 class="section__title">Как мы работаем</h2>
+          <div class="video__container">
+            <video class="video__player" poster="./img/background/poster.jpg">
+              <source src="./video/how_we_work.mp4" type="video/mp4">
+            </video>
+            <a href="#" class="video__playbig">
+              <img src="./img/icon/play.png" alt="" class="video__playbig-icon">
+            </a>
+            <div class="video__controls">
+              <img src="./img/icon/play_gray.png" alt="" class="video__play">
+              <input type="range" class="video__progress">
+              <img src="./img/icon/mic.png" alt="" class="video__volume">
+              <input type="range" class="video__volume-level">
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section order-section section--font-color--green" data-section-id="order" data-theme="white">
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
@@ -715,6 +735,9 @@
         </div>
       </section>
       <section class="section footer-section" data-section-id="footer" data-theme="darkgreen">
+        <div id="map" data-eymaps='{
+          "map": { "center": [55.74787804, 37.62678159] }
+      }'></div>
         <footer class="footer">
           <div class="container footer__container">
             <div class="footer__contacts">

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp"
+    "gulp": "cross-env NODE_ENV=dev gulp",
+    "build": "cross-env NODE_ENV=prod gulp"
   },
   "repository": {
     "type": "git",
@@ -24,16 +24,19 @@
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "cross-env": "^7.0.3",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-sass": "^4.1.0",
     "gulp-sass-glob": "^1.1.0",
+    "gulp-smile-px2rem": "^0.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "node-sass": "^5.0.0"
   },
   "dependencies": {
-    "bxslider-import": "^4.2.14",
-    "fancybox": "^3.0.1",
+    "bxslider-import": "^4.2.14",   
+    "fancybox": "^3.0.1",    
     "jquery": "^3.5.1",
     "jquery-touchswipe": "^1.6.19",
     "normalize.css": "^8.0.1"

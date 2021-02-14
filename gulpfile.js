@@ -16,12 +16,15 @@ const autoprefixer = require('gulp-autoprefixer');
 const gcmq = require('gulp-group-css-media-queries');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
+const gulpif = require('gulp-if');
 const uglify = require('gulp-uglify');
+
+const env = process.env.NODE_ENV;
 
 sass.compiler = require("node-sass");
 
 task("clean", () => {
-  return src('dist', {
+  return src('dist/', {
     read: false
   }).pipe(clean());
 });
@@ -29,6 +32,17 @@ task("clean", () => {
 task("copy:img", () => {
   return src('src/img/**/*')
     .pipe(dest('dist/img'))
+    .pipe(reloadBrws({
+      stream: true
+    }));
+});
+task("copy:images", () => {
+  return src('src/images/*')
+    .pipe(dest('dist/images'))
+});
+task("copy:video", () => {
+  return src('src/video/**/*')
+    .pipe(dest('dist/video'))
     .pipe(reloadBrws({
       stream: true
     }));
@@ -52,16 +66,16 @@ const styles = [
 
 task("styles", () => {
   return src(styles)
-    .pipe(sourcemaps.init())
+    .pipe(gulpif(env === 'dev', sourcemaps.init()))
     .pipe(concat('main.min.scss'))
     .pipe(sass().on('error', sass.logError))
-    // .pipe(gcmq())
-    .pipe(autoprefixer({
+    .pipe(gulpif(env === 'dev', autoprefixer({
       overrideBrowserslist: ["last 2 versions"],
       cascade: false
-    }))
-    .pipe(cleanCSS())
-    .pipe(sourcemaps.write())
+    })))
+    .pipe(gulpif(env === 'prod', gcmq()))
+    .pipe(gulpif(env === 'prod', cleanCSS()))
+    .pipe(gulpif(env === 'dev', sourcemaps.write()))
     .pipe(dest('dist'))
     .pipe(reloadBrws({
       stream: true
@@ -78,10 +92,10 @@ const scripts = [
 
 task("scripts", () => {
   return src(scripts)
-    .pipe(sourcemaps.init())
+    .pipe(gulpif(env === 'dev', sourcemaps.init()))
     .pipe(concat('main.min.js'))
-    .pipe(uglify())
-    .pipe(sourcemaps.write())
+    .pipe(gulpif(env === 'prod', uglify()))
+    .pipe(gulpif(env === 'dev', sourcemaps.write()))
     .pipe(dest('dist'))
     .pipe(reloadBrws({
       stream: true
@@ -101,4 +115,4 @@ watch("src/**/*", series("styles"));
 watch("src/*.html", series("copy:html"));
 watch("src/scripts/*.js", series("scripts"));
 
-task("default", series("clean", parallel("copy:img", "copy:html", "styles", "scripts"), "server"));
+task("default", series("clean", parallel("copy:img", "copy:images", "copy:video", "copy:html", "styles", "scripts"), "server"));
