@@ -1,5 +1,6 @@
 // горизонтальный
 
+;
 (function () {
   const open = item => {
     const container = item.closest(".assortment__item");

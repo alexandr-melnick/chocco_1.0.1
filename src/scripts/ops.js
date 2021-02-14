@@ -12,7 +12,7 @@
 
   $(window).on("wheel", e => {
     const deltaY = e.originalEvent.deltaY;
-    console.log(deltaY);
+    // console.log(deltaY);
 
     if (deltaY > 0) {
       performTransition(2);

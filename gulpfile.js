@@ -45,6 +45,8 @@ task("copy:html", () => {
 
 const styles = [
   'node_modules/normalize.css/normalize.css',
+  'node_modules/bxslider-import/dist/jquery.bxslider.css',
+  'node_modules/fancybox/dist/css/jquery.fancybox.css',
   'src/styles/main.scss'
 ]
 
@@ -68,6 +70,8 @@ task("styles", () => {
 
 const scripts = [
   "node_modules/jquery/dist/jquery.js",
+  "node_modules/bxslider-import/dist/jquery.bxslider.min.js",
+  "node_modules/fancybox/dist/js/jquery.fancybox.js",
   "src/scripts/*.js"
 ]
 
