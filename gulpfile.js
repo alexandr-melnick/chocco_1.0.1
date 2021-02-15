@@ -86,7 +86,7 @@ const scripts = [
   "node_modules/jquery/dist/jquery.js",
   "node_modules/bxslider-import/dist/jquery.bxslider.min.js",
   "node_modules/fancybox/dist/js/jquery.fancybox.js",
-  // "node_modules/jquery-touchswipe/jquery.touchSwipe.js",
+  "node_modules/jquery-touchswipe/jquery.touchSwipe.js",
   "src/scripts/*.js"
 ]
 
