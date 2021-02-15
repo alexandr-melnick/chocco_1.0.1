@@ -95,6 +95,10 @@
 
     &-icon {
       width: 85%;
+
+      &--activePlay {
+        opacity: 0;
+      }
     }
   }
 
@@ -115,9 +119,11 @@
   }
 
   &__play {
+    cursor: pointer;
     margin-right: rem(20px);
     margin-left: rem(10px);
   }
+
 
   &__progress {
     background: #626262;
@@ -126,6 +132,7 @@
     margin-right: rem(30px);
     position: relative;
     appearance: none;
+    outline: none;
     cursor: pointer;
 
     &::-webkit-slider-thumb {
@@ -144,6 +151,7 @@
 
   &__volume {
     margin-right: rem(10px);
+    cursor: pointer;
   }
 
   &__volume-level {
@@ -153,6 +161,7 @@
     margin-right: rem(10px);
     position: relative;
     appearance: none;
+    outline: none;
     cursor: pointer;
 
     &::-webkit-slider-thumb {
