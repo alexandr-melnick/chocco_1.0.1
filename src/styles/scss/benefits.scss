@@ -30,7 +30,7 @@
   }
 
   &::before {
-    content: url("../img/decoration/circle.png");
+    content: url("img/decoration/circle.png");
     position: absolute;
     top: rem(60px);
     right: 0;
@@ -51,12 +51,12 @@
 
 .benefits-section {
   position: relative;
-  background: url("../img/background/pattern_grey.png") left center no-repeat;
+  background: url("img/background/pattern_grey.png") left center no-repeat;
   align-items: center;
 
 
   &::before {
-    content: url("../img/decoration/raspberry.png");
+    content: url("img/decoration/raspberry.png");
     position: absolute;
 
     bottom: rem(-110px);

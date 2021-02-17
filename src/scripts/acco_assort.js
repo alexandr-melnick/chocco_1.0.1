@@ -35,9 +35,9 @@
 
   function calcWidth() {
     const windowWidth = window.innerWidth;
-    const items = $(".assortment__item");
+    const items = $(".assortment__item-rotate");
     const itemsWidth = items[0].clientWidth * items.length;
-    const width = windowWidth - itemsWidth
+    const width = windowWidth - itemsWidth;
     if (window.matchMedia('(max-width: 768px)').matches) {
       return width
     } else {
