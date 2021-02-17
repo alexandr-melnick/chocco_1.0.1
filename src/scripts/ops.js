@@ -90,15 +90,17 @@
     performTransition(reqSection.index());
   })
 
-  $("body").swipe({
-    swipe: function (event, direction) {
-      if (direction === "up") {
-        scrollViewport("next");
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    $("body").swipe({
+      swipe: function (event, direction) {
+        if (direction === "up") {
+          scrollViewport("next");
+        }
+        if (direction === "down") {
+          scrollViewport("prev");
+        }
       }
-      if (direction === "down") {
-        scrollViewport("prev");
-      }
-    }
-  });
+    });
+  }
 
 })();
