@@ -37,11 +37,6 @@ task("copy:images", () => {
     }));
 });
 
-task("copy:ico", () => {
-  return src('src/*.ico')
-    .pipe(dest('dist'))
-});
-
 task("copy:video", () => {
   return src('src/video/**/*')
     .pipe(dest('dist/video'))
@@ -122,4 +117,4 @@ watch("src/**/*", series("styles"));
 watch("src/*.html", series("copy:html"));
 watch("src/scripts/*.js", series("scripts"));
 
-task("default", series("clean", parallel("styles:plagin", "copy:images", "copy:ico", "copy:video", "copy:html", "styles", "scripts"), "server"));
+task("default", series("clean", parallel("styles:plagin", "copy:images", "copy:video", "copy:html", "styles", "scripts"), "server"));
