@@ -99,7 +99,7 @@
 
   &::after {
     content: "";
-    background: url("img/decoration/raspberries.png") center center /cover no-repeat;
+    background: url("images/decoration/raspberries.png") center center /cover no-repeat;
     position: absolute;
     width: rem(104px);
     height: rem(114px);
@@ -110,7 +110,7 @@
 
   &::before {
     content: "";
-    background: url("img/decoration/blueberrys.png") center right / 70% no-repeat, url("img/background/pattern_team.png") center center / cover no-repeat;
+    background: url("images/decoration/blueberrys.png") center right / 70% no-repeat, url("images/background/pattern_team.png") center center / cover no-repeat;
     width: rem(193px);
     height: rem(453px);
     position: absolute;

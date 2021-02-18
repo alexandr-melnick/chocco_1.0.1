@@ -1,10 +1,10 @@
 .order-section {
-  background: url("img/background/bg_input.png") center center no-repeat;
+  background: url("images/background/bg_input.png") center center no-repeat;
   position: relative;
   align-items: center;
 
   &::after {
-    content: url("img/decoration/blueberry.png");
+    content: url("images/decoration/blueberry.png");
     position: absolute;
     left: 3%;
 
@@ -12,7 +12,7 @@
   }
 
   &::before {
-    content: url("img/decoration/sheet4.png");
+    content: url("images/decoration/sheet4.png");
     position: absolute;
     bottom: rem(60px);
     right: .5%;

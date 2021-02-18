@@ -18,7 +18,7 @@
     const myCollection = new ymaps.GeoObjectCollection({}, {
       draggable: false,
       iconLayout: 'default#image',
-      iconImageHref: './img/icon/mark.png',
+      iconImageHref: 'images/icon/mark.png',
       iconImageSize: [30, 42],
       iconImageOffset: [-3, -42]
     });

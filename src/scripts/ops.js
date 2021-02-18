@@ -92,7 +92,7 @@
 
   if (window.matchMedia('(max-width: 768px)').matches) {
     $("body").swipe({
-      swipe: function (event, direction) {
+      swipe: function (e, direction) {
         if (direction === "up") {
           scrollViewport("next");
         }
