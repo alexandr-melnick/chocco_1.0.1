@@ -36,10 +36,20 @@ task("copy:img", () => {
       stream: true
     }));
 });
+
 task("copy:images", () => {
-  return src('src/images/*')
+  return src('src/images/**/*')
     .pipe(dest('dist/images'))
+    .pipe(reloadBrws({
+      stream: true
+    }));
 });
+
+task("copy:ico", () => {
+  return src('src/*.ico')
+    .pipe(dest('dist'))
+});
+
 task("copy:video", () => {
   return src('src/video/**/*')
     .pipe(dest('dist/video'))
@@ -49,7 +59,7 @@ task("copy:video", () => {
 });
 
 task("copy:html", () => {
-  return src('src/index.html')
+  return src('src/*.html')
     .pipe(dest('dist'))
     .pipe(reloadBrws({
       stream: true
@@ -115,4 +125,4 @@ watch("src/**/*", series("styles"));
 watch("src/*.html", series("copy:html"));
 watch("src/scripts/*.js", series("scripts"));
 
-task("default", series("clean", parallel("copy:img", "copy:images", "copy:video", "copy:html", "styles", "scripts"), "server"));
+task("default", series("clean", parallel("copy:img", "copy:ico", "copy:images", "copy:video", "copy:html", "styles", "scripts"), "server"));

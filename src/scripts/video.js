@@ -42,16 +42,14 @@
 
     player.addEventListener('click', playStop);
 
-    duraionProgress.addEventListener('click', setDurationVideo);
+    duraionProgress.addEventListener('input', setDurationVideo);
     duraionProgress.addEventListener('mousedown', stopInterval);
 
     soundControl.addEventListener('input', changeSoundVolume)
-
   }
 
   function playStop() {
     playBigBtn.classList.toggle("video__playbig-icon--activePlay");
-
 
     if (player.paused) {
       intervalId = setInterval(updateDuration, NORMAL_UPDATE_RANGE);
